@@ -23,6 +23,7 @@ illu-file = 插圖檔案
 unlock-file = 解鎖動畫檔案
 tip = Tip
 intro = 簡介
+how-to-add-collaborator = 如何新增協作者
 tags = 標籤
 tag-exists = 標籤已存在
 rpe-170-speed = RPE1.7新速度緩動
