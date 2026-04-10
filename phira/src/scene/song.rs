@@ -1852,6 +1852,12 @@ impl Scene for SongScene {
         let t = tm.now() as f32;
         self.menu.update(t);
         self.fav_menu.update(t);
+        if self.fav_btn.update_long_touch(t, &mut self.fav_long_touch) {
+            button_hit();
+            let options = self.get_fav_menu_options();
+            self.fav_menu.set_options(options);
+            self.need_show_fav_menu = true;
+        }
         self.illu.settle(t);
         let rt = tm.real_time() as f32;
         self.tags.update(rt);
